@@ -3,6 +3,9 @@
 (setq TeX-save-query nil)
 ;(setq TeX-PDF-mode t)
 
+(add-to-list 'load-path "/Users/ccrowe/Documents/gitrepos/jointFeatures/emacs-config/predictive")
+(require 'predictive)
+
 (setq langtool-language-tool-jar "/Users/ccrowe/Documents/gitrepos/jointFeatures/emacs-config/lt/languagetool-commandline.jar")
 (require 'langtool)
 
@@ -14,6 +17,7 @@
 (writegood-mode 1)
 (flyspell-mode 1)
 (artbollocks-mode 1)
+(predictive-mode 1)
 (add-hook 'LaTeX-mode-hook 'flymake-mode)
 
 (setq ispell-program-name "aspell") ; could be ispell as well, depending on your preferences
